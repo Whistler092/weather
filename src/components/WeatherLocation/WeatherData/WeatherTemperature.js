@@ -6,7 +6,9 @@ import { CLOUD,
          SUN, 
          RAIN, 
          SNOW, 
-         WINDY } from './../../../constants/weathers'
+         WINDY, 
+         THUNDER,
+         DRIZZLE } from './../../../constants/weathers'
 import './styles.css';
 
 const stateToIconName = weatherState => {
@@ -23,6 +25,10 @@ const stateToIconName = weatherState => {
             return "snow"; 
         case WINDY:
             return "windy"; 
+        case THUNDER:
+            return "day-thunderstorm"; 
+        case DRIZZLE:
+            return "day-showers"; 
         default:
             return 'day-sunny';
     }
@@ -39,7 +45,7 @@ const WeatherTemperature = ({ temperature , weatherState }) => (
 );
 
 WeatherTemperature.propTypes = {
-    temperature: PropTypes.number.isRequired,
+    temperature: PropTypes.string.isRequired,
     weatherState: PropTypes.string,
 };
 

@@ -23,3 +23,6 @@
 - https://sass-lang.com/
 - http://lesscss.org/
 - https://github.com/css-modules/css-modules
+
+#ESlint Buenas Practicas
+-https://eslint.org/docs/rules/
