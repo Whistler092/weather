@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import LocationList from './components/LocationList';
-import './App.css';
+import ForecastExtended from './components/ForecastExtended';
+
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Paper, AppBar } from 'material-ui';
-
+import './App.css';
 
 const cities = [
   'Cali,col',
@@ -18,12 +19,21 @@ const cities = [
 
 class App extends Component {
 
+  constructor(){
+    super();
+
+    this.state = {
+      city : 'Nueva Ciudad!'
+    };
+  }
+
   handleSelectedLocation = city =>{
+    this.setState({ city });
     /*console.log("handleSelectedLocation", city);*/
   }
 
   render() {
-    
+    const { city } = this.state;
     return (
       <MuiThemeProvider>
         <Grid >
@@ -39,7 +49,9 @@ class App extends Component {
             </Col>
             <Col xs={12} md={6} >
               <Paper zDepth={4}>
-                <div className="detail"> </div>
+                <div className="detail"> 
+                  <ForecastExtended city={city} />
+                </div>
               </ Paper>
             </Col>
           </Row> 
