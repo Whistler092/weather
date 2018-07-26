@@ -3,6 +3,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import LocationList from './components/LocationList';
 import ForecastExtended from './components/ForecastExtended';
 
+import { store } from './store';
+import { setCity } from './actions';
+
 import { Grid, Row, Col } from 'react-flexbox-grid';
 import { Paper, AppBar } from 'material-ui';
 import './App.css';
@@ -30,6 +33,8 @@ class App extends Component {
   handleSelectedLocation = city =>{
     this.setState({ city });
     /*console.log("handleSelectedLocation", city);*/
+
+    store.dispatch(setCity(city));
   }
 
   render() {
