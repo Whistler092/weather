@@ -1,5 +1,15 @@
 # Librerias  usadas
 
+##VSCode 
+- vscode icons
+- reactjs code snippets
+
+##jshint
+[jshint] Class properties must be methods. Expected '(' but instead saw '='. (E054)
+
+I added this in my User Settings/Workplace Settings in Visual Studio Code.
+"jshint.options" : {"esversion": 6}
+
 ## Componente de iconos
 - https://www.npmjs.com/package/react-weathericons
 - https://erikflowers.github.io/weather-icons/
