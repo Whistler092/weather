@@ -31,3 +31,8 @@
 
 #Fechas
 https://momentjs.com/
+
+#Redux, 
+    Manejo del estado de la aplicación, 
+
+# Smart Components vs Dumb Components
