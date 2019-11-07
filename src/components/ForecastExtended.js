@@ -6,7 +6,7 @@ import ForecastItem from './ForecastItem';
 
 
 const api_key = '02cc4fcabfb716d330aba31c86b5954f';
-const url = 'http://api.openweathermap.org/data/2.5/forecast'
+const url = 'https://api.openweathermap.org/data/2.5/forecast'
 
 class ForecastExtended extends Component {
 

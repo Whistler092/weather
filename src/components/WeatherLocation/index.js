@@ -8,7 +8,7 @@ import { CircularProgress } from 'material-ui';
 
 
 const api_key = '02cc4fcabfb716d330aba31c86b5954f';
-const url = 'http://api.openweathermap.org/data/2.5/weather'
+const url = 'https://api.openweathermap.org/data/2.5/weather'
 
 class Weaterlocation extends Component {
 
