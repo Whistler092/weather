@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { setCity } from './../actions';
+import { setCity } from '../actions';
 
 import LocationList from './../components/LocationList';
 
